@@ -9,3 +9,11 @@ function addingTwoNumbers () {
 	console.log("sum", sum);
 
 };
+
+function subtractingNumbers () {
+	var a = 7;
+	var b = 3;
+	var answer = a - b;
+
+	console.log("answer", answer)
+}
