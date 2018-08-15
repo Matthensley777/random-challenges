@@ -40,3 +40,39 @@ var aStack = [];
 
 
 stackLetters(alphabet)
+
+//Star Christmas Tree!
+
+function christmasTreeVars() {
+	var treeSize = document.getElementById("size").value;
+	var treeCharictor = document.getElementById("char").value;
+	var tree =  {height:treeSize*1,  char:treeCharictor};
+	growTree(tree);
+	}	
+function growTree(treeObject) {
+	for (var i = 0; i < treeObject.height; i++){
+		var chars = 2*i+1;
+		var spaces = treeObject.height-(i+1);
+		console.log(" ".repeat(spaces)+treeObject.char.repeat(chars))
+		}
+}
+
+document.getElementById("button").addEventListener("click", christmasTreeVars);
+document.getElementById("button").addEventListener("click", growTree);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
